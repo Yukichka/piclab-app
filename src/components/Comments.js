@@ -8,9 +8,10 @@ export class Comments extends React.Component {
   }
 
   handleSubmit(event) {
+    console.log(this.props.id)
     event.preventDefault();
     const comment = event.target.comment.value;
-    this.props.addComment(comment, this.props.id);
+    this.props.startAddingComment(comment,this.props.id);
     event.target.comment.value = "";
   }
   backToTop(){

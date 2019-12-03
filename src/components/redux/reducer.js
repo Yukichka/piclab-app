@@ -12,22 +12,22 @@ function comments(state = {}, action) {
           ...state,
           [action.picId]: [...state[action.picId], action.comment]
         };
+    case "LOAD_COMMENTS":
+      return action.comments;
     default:
       return state;
   }
 }
 
 function pics(state = dataset, action) {
-  // console.log(action.index);
+  // console.log(action.idx);
   switch (action.type) {
     case "REMOVE_PIC":
-      return [
-        ...state.slice(0, action.index),
-        ...state.slice(action.index + 1)
-      ];
+      return [...state.slice(0, action.idx), ...state.slice(action.idx + 1)];
     case "ADD_PIC":
       return [...state, action.pic];
-
+    case "LOAD_PICS":
+      return action.pics;
     default:
       return state;
   }

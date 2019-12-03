@@ -1,5 +1,6 @@
 import React from "react";
 import { Comments } from "./Comments";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 
 export class EachPic extends React.Component {
@@ -17,6 +18,9 @@ export class EachPic extends React.Component {
         <Container>
           <Row>
             <Col sm="6" xs="12">
+              <Link to="/" className="back-to-top">
+                Back
+              </Link>
               <img src={`${pic.src}`} alt="" className="each-pic-img" />
               <div className="each-pic-note">Note |{` ${pic.note}`}</div>
               <img src="/imgs/comment.png" alt="" height="16px" />
@@ -29,7 +33,7 @@ export class EachPic extends React.Component {
             </Col>
             <Col sm="6" xs="12">
               <Comments
-                addComment={this.props.addComment}
+                startAddingComment={this.props.startAddingComment}
                 comments={comments}
                 id={id}
               />

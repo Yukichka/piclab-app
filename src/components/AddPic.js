@@ -16,7 +16,7 @@ export class AddPic extends React.Component {
       note: picNote
     };
     if (picNote && picUrl) {
-      this.props.addPic(pic);
+      this.props.startAddingPic(pic);
       this.props.onHistory.push("/");
     }
   }

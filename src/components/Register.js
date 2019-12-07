@@ -1,5 +1,5 @@
 import React from "react";
-import { FotgotPassword } from "./ForgotPassword";
+// import { FotgotPassword } from "./ForgotPassword";
 
 export class Register extends React.Component {
   constructor(props) {

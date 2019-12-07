@@ -7,11 +7,11 @@ export class EachPic extends React.Component {
   render() {
     // const id = this.props.match.params.picId;
     const id = Number(this.props.match.params.picId);
-    const pics = this.props.pics;
-    console.log(pics, id);
+    // const pics = this.props.pics;
+    // console.log(pics, id);
     // const pic = this.props.pics.find(pic => pic.id.toString() === id);
     const pic = this.props.pics.find(pic => pic.id === id);
-    console.log(pic);
+    // console.log(pic);
     const comments = this.props.comments[this.props.match.params.picId] || [];
     return (
       <div className="eachpic">

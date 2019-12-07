@@ -8,7 +8,7 @@ export class Comments extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log(this.props.id)
+    // console.log(this.props.id)
     event.preventDefault();
     const comment = event.target.comment.value;
     this.props.startAddingComment(comment,this.props.id);
@@ -19,7 +19,7 @@ export class Comments extends React.Component {
   }
 
   render() {
-    console.log(this.props.comments);
+    // console.log(this.props.comments);
     return (
       <div className="comments">
         <form onSubmit={this.handleSubmit}>

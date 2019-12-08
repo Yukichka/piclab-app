@@ -103,6 +103,7 @@
   .add-input {
     width: 230px;
     margin: 4em 0;
+    padding: 1px;
   }
 }
 .add {

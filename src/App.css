@@ -21,7 +21,6 @@
   -webkit-appearance: none;
   border-radius: 0;
   outline: none;
-  border-radius: 0;
 }
 .checkbox {
   outline: 0;
@@ -98,6 +97,7 @@
   width: 400px;
   margin: 4em;
   outline: none;
+  border-radius: 0;
 }
 @media (max-width: 500px) {
   .add-input {
@@ -180,6 +180,7 @@
   width: 400px;
   margin: 1.5em auto;
   outline: none;
+  border-radius: 0;
 }
 @media (max-width: 1200px) {
   .comment-input {

@@ -101,7 +101,8 @@
 }
 @media (max-width: 500px) {
   .add-input {
-    width: 275px;
+    width: 230px;
+    margin: 4em 0;
   }
 }
 .add {
@@ -205,7 +206,7 @@
 }
 
 .link-to-comment span {
-  color: black;
+  color: black; 
 }
 .link-to-comment:hover {
   text-decoration: none;

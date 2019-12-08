@@ -21,6 +21,7 @@
   -webkit-appearance: none;
   border-radius: 0;
   outline: none;
+  border-radius: 0;
 }
 .checkbox {
   outline: 0;

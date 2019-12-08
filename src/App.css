@@ -225,3 +225,7 @@
     margin: 0 0.5em;
   }
 }
+.loader{
+  text-align: center;
+  margin: 10em auto;
+}

@@ -5,8 +5,13 @@ import { EachPic } from "./EachPic";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 export class Main extends React.Component {
+  state = {
+    isLoading: true
+  };
   componentDidMount() {
-    this.props.startLoadingPic();
+    this.props.startLoadingPic().then(() => {
+      this.setState({ isLoading: false });
+    });
     this.props.startLoadingComments();
   }
   render() {
@@ -23,7 +28,13 @@ export class Main extends React.Component {
             />
             <Route
               path="/picture/:picId"
-              render={params => <EachPic {...this.props} {...params} />}
+              render={params => (
+                <EachPic
+                  isLoading={this.state.isLoading}
+                  {...this.props}
+                  {...params}
+                />
+              )}
             />
             <Route path="/" exact>
               <Gallery {...this.props} />

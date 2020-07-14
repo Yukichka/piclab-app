@@ -14,8 +14,8 @@ Using:
 
 Author: [Yuki](https://github.com/Yukichka) 
 
-LinkedIn:[Yuki Inasawa](https://www.linkedin.com/in/yuki-inasawa)
+LinkedIn: [Yuki Inasawa](https://www.linkedin.com/in/yuki-inasawa)
 
 Github respository: [Yukichka/Yuki-app](https://github.com/Yukichka/piclab-app)
 
-Website:[piclab](https://piclab-a968c.firebaseapp.com)
+Website: [piclab](https://piclab-a968c.firebaseapp.com)
